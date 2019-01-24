@@ -1,0 +1,16 @@
+# neo docker-compose
+# cf2141
+
+version: '3'
+
+services:
+  
+  python:
+    container_name: neo-python
+    build: ./python
+    restart: always
+    
+networks:
+  default:
+    external:
+      name: neo-net

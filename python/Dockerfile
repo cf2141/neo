@@ -31,7 +31,9 @@ COPY ./id_rsa /root/.ssh
 COPY ./config /root/.ssh
 RUN chmod 600 /root/.ssh/id_rsa
 
-COPY ./logstash-6.4.0.deb /tmp
+RUN curl -L -O https://artifacts.elastic.co/downloads/logstash/logstash-7.1.0.deb
+
+# COPY ./logstash-6.4.0.deb /tmp
 
 
 

@@ -23,6 +23,10 @@ COPY ./id_rsa /root/.ssh
 COPY ./config /root/.ssh
 RUN chmod 600 /root/.ssh/id_rsa
 
+#COPY ./openjdk-11.0.1_linux-x64_bin.tar.gz /tmp
+RUN curl -L -O https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
+RUN curl -L -O https://artifacts.elastic.co/downloads/logstash/logstash-6.0.1.deb
+
 #
 # github won't store large files, like logstash-6.4.0.deb
 # a plan

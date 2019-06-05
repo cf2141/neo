@@ -1,0 +1,6 @@
+Host *.com
+  StrictHostKeyChecking no
+  IdentityFile /root/.ssh/id_rsa
+Host 127.0.0.1
+  StrictHostKeyChecking no
+  IdentityFile /root/.ssh/id_rsa
